@@ -10,8 +10,11 @@ import Foundation
 @testable import TMDbCore
 
 final class DetailNavigatorMock: DetailNavigator {
+
+    
 	var navigateToShowCalls: [Int64] = []
 	var navigateToMovieCalls: [Int64] = []
+    var navigateToPersonCalls: [Int64] = []
 
 	func navigateToShow(withIdentifier identifier: Int64) {
 		navigateToShowCalls.append(identifier)
@@ -20,4 +23,8 @@ final class DetailNavigatorMock: DetailNavigator {
 	func navigateToMovie(withIdentifier identifier: Int64) {
 		navigateToMovieCalls.append(identifier)
 	}
+    
+    func navigateToPerson(withIdentifier identifier: Int64) {
+        navigateToPersonCalls.append(identifier)
+    }
 }
