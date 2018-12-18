@@ -37,7 +37,7 @@ final class DetailAssembly {
 	}
     
     func showPresenter(identifier: Int64) -> DetailPresenter {
-        return ShowPresenter(repository: showRepository(), identifier: identifier)
+        return ShowPresenter(detailNavigation: pushDetailNavigator, repository: showRepository(), identifier: identifier)
     }
 
 	func personPresenter(identifier: Int64) -> DetailPresenter {

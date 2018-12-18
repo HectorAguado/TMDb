@@ -10,15 +10,18 @@ import RxSwift
 
 final class ShowPresenter: DetailPresenter {
     
+    private let detailNavigation: PushDetailNavigator
+    
     private let repository: ShowRepositoryProtocol
     private let identifier: Int64
     private let disposeBag = DisposeBag()
     
     weak var view: DetailView?
 
-    init(repository: ShowRepositoryProtocol, identifier: Int64) {
+    init(detailNavigation: PushDetailNavigator, repository: ShowRepositoryProtocol, identifier: Int64) {
         self.repository = repository
         self.identifier = identifier
+        self.detailNavigation = detailNavigation
     }
     
     func didLoad() {
@@ -40,7 +43,7 @@ final class ShowPresenter: DetailPresenter {
     }
     
     func didSelect(item: PosterStripItem) {
-        // TODO
+        detailNavigation.navigateToPerson(withIdentifier: item.identifier)
     }
     
     private func detailSections(for show: ShowDetail) -> [DetailSection] {
