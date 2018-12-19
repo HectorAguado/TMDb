@@ -4,6 +4,7 @@
 
 ## The Movie Database API Key
 /Keys.xcconfig
+/TMDbCore/Config/Keys.xcconfig
 
 ## Build generated
 build/
