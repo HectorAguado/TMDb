@@ -105,6 +105,7 @@
 		99F056501F8A5A0E00A680D8 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0564F1F8A5A0E00A680D8 /* MovieRepository.swift */; };
 		99F056521F8A5B4000A680D8 /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F056511F8A5B4000A680D8 /* MoviePresenter.swift */; };
 		99F056541F8A5F9200A680D8 /* DetailHeader+MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F056531F8A5F9200A680D8 /* DetailHeader+MovieDetail.swift */; };
+		EB0E1D7A21D10A5B00B64E16 /* Keys.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EB0E1D7921D10A5B00B64E16 /* Keys.xcconfig */; };
 		EBFA18FB21C81C5F0083B688 /* ShowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFA18FA21C81C5F0083B688 /* ShowPresenter.swift */; };
 		EBFA18FD21C81CCE0083B688 /* ShowRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFA18FC21C81CCE0083B688 /* ShowRepository.swift */; };
 		EBFA18FF21C81FDE0083B688 /* ShowDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFA18FE21C81FDE0083B688 /* ShowDetail.swift */; };
@@ -236,7 +237,6 @@
 		99B9A3371F73CB71004F883E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		99B9A33C1F73F39B004F883E /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		99B9A33E1F73F4D0004F883E /* WebServiceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceConfiguration.swift; sourceTree = "<group>"; };
-		99B9A3461F74072C004F883E /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
 		99B9A3491F74181A004F883E /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		99C5C9041F7B77750038688F /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		99C5C9091F7B78740038688F /* SearchResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsPresenter.swift; sourceTree = "<group>"; };
@@ -256,6 +256,7 @@
 		99F0564F1F8A5A0E00A680D8 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
 		99F056511F8A5B4000A680D8 /* MoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
 		99F056531F8A5F9200A680D8 /* DetailHeader+MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailHeader+MovieDetail.swift"; sourceTree = "<group>"; };
+		EB0E1D7921D10A5B00B64E16 /* Keys.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Keys.xcconfig; path = "../../../TMDb-bootcamp-6.02-2/TMDbCore/Config/Keys.xcconfig"; sourceTree = "<group>"; };
 		EBFA18FA21C81C5F0083B688 /* ShowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPresenter.swift; sourceTree = "<group>"; };
 		EBFA18FC21C81CCE0083B688 /* ShowRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRepository.swift; sourceTree = "<group>"; };
 		EBFA18FE21C81FDE0083B688 /* ShowDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetail.swift; sourceTree = "<group>"; };
@@ -563,7 +564,7 @@
 		99B9A3451F74072C004F883E /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				99B9A3461F74072C004F883E /* Keys.xcconfig */,
+				EB0E1D7921D10A5B00B64E16 /* Keys.xcconfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -777,6 +778,7 @@
 				99C5C9151F7B8C5E0038688F /* Core.xcassets in Resources */,
 				99A465371F7CDCD9007F3B5B /* DetailAboutView.xib in Resources */,
 				999818391F7B98FE00DAC2E5 /* genres.json in Resources */,
+				EB0E1D7A21D10A5B00B64E16 /* Keys.xcconfig in Resources */,
 				99A465331F7CD267007F3B5B /* DetailHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1112,7 +1114,7 @@
 		};
 		9995F3801F73A4E2009BA4D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99B9A3461F74072C004F883E /* Keys.xcconfig */;
+			baseConfigurationReference = EB0E1D7921D10A5B00B64E16 /* Keys.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1143,7 +1145,7 @@
 		};
 		9995F3811F73A4E2009BA4D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99B9A3461F74072C004F883E /* Keys.xcconfig */;
+			baseConfigurationReference = EB0E1D7921D10A5B00B64E16 /* Keys.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
